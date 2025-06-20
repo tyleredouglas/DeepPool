@@ -1,0 +1,7 @@
+[console_scripts]
+haplomatic-estimate = haplomatic.estimate:main
+haplomatic-sim = haplomatic.sim:main
+haplomatic-train = haplomatic.trainer:main
+haplomatic-tune = haplomatic.tune:main
+haplomatic-validate = haplomatic.validate:main
+haplomatic-window = haplomatic.windows:main

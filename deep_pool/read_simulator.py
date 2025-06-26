@@ -1,4 +1,4 @@
-# haplomatic/read_simulator.py
+# deep_pool/read_simulator.py
 
 import pandas as pd
 import numpy as np

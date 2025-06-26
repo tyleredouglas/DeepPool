@@ -22,9 +22,9 @@ from scipy.optimize import minimize
 from scipy.stats import kurtosis, skew
 
 # ─────────────────────────── module defaults ────────────────────────── #
-# these are overridden in main() via --burn-in / --sampling
 burnin   = 100
 samples  = 100
+
 # ─────────────────────────── helper functions ──────────────────────────── #
 
 def read_list_file(path: str) -> List[str]:
@@ -58,7 +58,7 @@ def compute_effective_rank(X: np.ndarray) -> float:
 
 class FixedWindowGenerator:
     """
-    Slide every size in window_sizes_kb (converted to bp) across the SNP table
+    Sslide every size in window_sizes_kb (converted to bp) across the SNP table
     with stride_kb, collecting SNP rows for each window.
     """
     def __init__(self,
@@ -101,7 +101,7 @@ class FixedWindowGenerator:
 
 class FeatureBuilder:
     """
-    Builds the feature/error records using a single NUTS chain.
+    builds the feature/error records using a single NUTS chain.
     """
     def __init__(self,
                  num_warmup: int | None = None,
@@ -157,7 +157,7 @@ class FeatureBuilder:
             imp_g   = float(np.log(np.median(1/(np.abs(np.linalg.eigvals(H))+1e-8))+1e-8))
             err     = float(np.abs(p_mean - info["true_freq_row"]).sum())
 
-            # LSEI + avg SNP‐freq
+            # lsei + avg SNP‐freq
             lsei = lsei_haplotype_estimator(X,b)
             avgf = np.array([
                 win.loc[win[c]==1,sim_col].mean()

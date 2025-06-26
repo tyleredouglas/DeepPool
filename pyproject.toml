@@ -1,5 +1,5 @@
 [project]
-name = "haplomatic"
+name = "deep_pool"
 version = "0.1.1"
 description = "Adaptive-resolution haplotype frequency estimator"
 authors = [
@@ -19,12 +19,12 @@ dependencies = [
 ]
 
 [project.scripts]
-haplomatic-sim    = "haplomatic.sim:main"
-haplomatic-window = "haplomatic.windows:main"
-haplomatic-train  = "haplomatic.trainer:main"
-haplomatic-tune = "haplomatic.tune:main"
-haplomatic-validate = "haplomatic.validate:main"
-haplomatic-estimate = "haplomatic.estimate:main"
+dp-sim    = "deep_pool.sim:main"
+dp-window = "deep_pool.windows:main"
+dp-train  = "deep_pool.trainer:main"
+dp-tune = "deep_pool.tune:main"
+dp-validate = "deep_pool.validate:main"
+dp-estimate = "deep_pool.estimate:main"
 
 [build-system]
 requires = ["setuptools>=61.0", "wheel"]

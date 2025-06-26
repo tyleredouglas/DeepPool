@@ -1,5 +1,5 @@
 Metadata-Version: 2.4
-Name: haplomatic
+Name: deep_pool
 Version: 0.1.1
 Summary: Adaptive-resolution haplotype frequency estimator
 Author-email: Tyler Douglas <tylerdouglase@gmail.com>

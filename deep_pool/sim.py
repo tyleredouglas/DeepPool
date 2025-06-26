@@ -91,9 +91,10 @@ def main() -> None:
 
             required files
             --------------
-              --haplotypes  list.txt        one haplotype name per line
-              --regions     regions.txt     contig:start:end 
-
+              --haplotypes       list.txt        one haplotype name per line
+              --regions          regions.txt     contig:start:end 
+              --founder-fastas   contigX.fa      fasta sequences of target regions for each haplotype
+              -contigs           list.txt        list of contig names 
         """)
     )
 

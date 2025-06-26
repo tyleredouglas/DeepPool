@@ -1,0 +1,7 @@
+[console_scripts]
+dp-estimate = deep_pool.estimate:main
+dp-sim = deep_pool.sim:main
+dp-train = deep_pool.trainer:main
+dp-tune = deep_pool.tune:main
+dp-validate = deep_pool.validate:main
+dp-window = deep_pool.windows:main

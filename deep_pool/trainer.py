@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# haplomatic/trainer.py
+# deep_pool/trainer.py
 
 """
 Train error prediction model

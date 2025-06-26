@@ -227,7 +227,7 @@ If you use DeepPool in your research, please cite:
 
 MIT License
 
-Copyright (c) 2024 Tyler E. Douglas
+Copyright (c) 2025 Tyler E. Douglas
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

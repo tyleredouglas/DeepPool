@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# haplomatic/tune.py
+# deep_pool/tune.py
 
 """
 Fine-tune pre-trained models from haplomatic-train

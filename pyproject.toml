@@ -26,6 +26,12 @@ dp-tune = "deep_pool.tune:main"
 dp-validate = "deep_pool.validate:main"
 dp-estimate = "deep_pool.estimate:main"
 
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "pytest-cov"
+]
+
 [build-system]
 requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"

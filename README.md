@@ -1,12 +1,12 @@
 # DeepPool
 
-DeepPool (formerly Haplomatic) is a deep-learning-based tool for estimating haplotype frequencies from pooled-sequencing data with dynamically scaled resolution. It addresses the trade-off between mapping resolution and estimation error in genetic mapping studies by predicting haplotype frequency estimation error and adjusting resolution until predicted error falls below a user-defined threshold, resulting in better localization of genetic signals without sacrificing accuracy. Error predictions are made by hybrid neural network that combines a transformer-encoder that processes a matrix of all SNPs in a given genomic window, and a feed-forward regressor that processes summary features of local genomic characteristics. DeepPool has been validated on both simulated and empirical datsets.
+DeepPool (formerly Haplomatic) is a deep-learning-based tool for improving the localization of quantitative trait loci (QTL) from pooled-sequencing data using haplotype composition. While narrower QTL peaks improve downstream identification of candidate genes at causal loci, inappropriately high resolution during QTL scans can introduce noise and reduce QTL detection power. DeepPool addresses this trade-off between mapping resolution and estimation error by  predicting haplotype composition estimation error and adjusting resolution until predicted error falls below a user-defined threshold, resulting in better localization of genetic signals without sacrificing accuracy. Error predictions are made by hybrid neural network that combines a transformer-encoder that processes a matrix of all SNPs in a given genomic window, and a feed-forward regressor that processes summary features of local genomic characteristics. DeepPool has been validated on both simulated and empirical datsets.
 
 
 ## Features
 - Simulation of read-data from in silico populations experiencing recombination and drift to create training datasets
-- Bayesian MCMC haplotype frequency estimation.
-- Deep learning-based prediction of haplotype frequency estimation error.
+- Quantificaiotn of haplotype composition via Bayesian MCMC.
+- Deep learning-based prediction of haplotype composition estimation error.
 - Modules for feature generation, model training, fine-tuning, and validation.
 
 ## Installation

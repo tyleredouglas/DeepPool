@@ -5,7 +5,7 @@ DeepPool (formerly Haplomatic) is a deep-learning-based tool for improving the l
 
 ## Features
 - Simulation of read-data from in silico populations experiencing recombination and drift to create training datasets
-- Quantificaiotn of haplotype composition via Bayesian MCMC.
+- Quantification of haplotype composition via Bayesian MCMC.
 - Deep learning-based prediction of haplotype composition estimation error.
 - Modules for feature generation, model training, fine-tuning, and validation.
 
@@ -21,7 +21,7 @@ pip install -r requirements.txt
 
 ### dp-sim
 
-Simulates pooled population data from in silico populaitons for model training and validation.
+Simulates pooled population data from in silico populations for model training and validation.
 
 **Required Files**
 

@@ -18,7 +18,7 @@ DeepPool has been validated on both simulated and empirical datasets, and enable
 ```bash
 git clone https://github.com/tyleredouglas/DeepPool.git
 cd DeepPool
-pip install -r requirements.txt
+pip install -e .
 ```
 
 ## Commands

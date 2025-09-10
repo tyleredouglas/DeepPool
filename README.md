@@ -1,6 +1,6 @@
 # DeepPool
 
-DeepPool (formerly Haplomatic) is a deep learning–based tool for improving the localization of quantitative trait loci (QTL) from pooled-sequencing data. Pooled sequencing makes it possible to sequence many genomes cost-effectively, but per-genome coverage is extremely low, making raw allele frequencies noisy and unreliable for QTL mapping. DeepPool addresses this by denoising pooled SNP data through haplotype inference: 
+DeepPool (formerly Haplomatic) is a deep learning–based tool for improving the localization of quantitative trait loci (QTL) from pooled-sequencing data. Pooled sequencing makes it possible to sequence many genomes cost-effectively, but per-genome coverage is typically extremely low, making raw allele frequencies noisy and unreliable for QTL mapping. DeepPool addresses this by denoising pooled SNP data through haplotype inference: 
   - It decomposes noisy SNP frequencies into haplotype frequencies, which are more robust for downstream analysis. 
   - To avoid losing fine-mapping power, DeepPool uses a transformer model to adaptively choose the smallest genomic window that still allows accurate haplotype inference, keeping error low while preserving resolution. 
   - Error prediction is handled by a hybrid neural network in which a transformer encoder generates low-dimensional embeddings of the raw SNP matrix while a feed-forward regressor incorporates local genomic features (e.g. coverage, mapping quality). 
